@@ -34,5 +34,4 @@ gcc -o main main.c -I./inc/ -L./libA -lA -L./libB -lB
 export LD_LIBRARY_PATH=./libA:./libB:$LD_LIBRARY_PATH
 ./main
 ```
-
 使用动态链接库的主要优点是减少程序的大小以及允许库的共享和更新，而不需要重新编译依赖这些库的程序。
